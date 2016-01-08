@@ -45,6 +45,13 @@ ofxUIScrollableCanvas::ofxUIScrollableCanvas() : ofxUICanvas()
     initScrollable();
 }
 
+ofxUIScrollableCanvas::ofxUIScrollableCanvas(string _title) : ofxUICanvas(_title)
+{
+    initScrollable();
+    title = _title;
+}
+
+
 ofxUIScrollableCanvas::ofxUIScrollableCanvas(ofxUICanvas *sharedResources) : ofxUICanvas(sharedResources)
 {
     initScrollable();

@@ -61,8 +61,8 @@ void ofxUIImageSampler::drawFill()
             image->draw(rect->getX(), rect->getY(), rect->width, rect->height);
         }
         ofxUISetColor(color_fill);
-        ofxUIDrawLine(rect->getX()+value.x*rect->getWidth(),  rect->getY(), rect->getX()+value.x*rect->getWidth(),  rect->getY()+rect->getHeight());
-        ofxUIDrawLine(rect->getX(),  rect->getY()+value.y*rect->getHeight(), rect->getX()+rect->getWidth(),  rect->getY()+value.y*rect->getHeight());
+        //ofxUIDrawLine(rect->getX()+value.x*rect->getWidth(),  rect->getY(), rect->getX()+value.x*rect->getWidth(),  rect->getY()+rect->getHeight());
+        //ofxUIDrawLine(rect->getX(),  rect->getY()+value.y*rect->getHeight(), rect->getX()+rect->getWidth(),  rect->getY()+value.y*rect->getHeight());
         
         ofxUIFill();
         ofxUISetColor(sampledColor);
@@ -78,8 +78,8 @@ void ofxUIImageSampler::drawFillHighlight()
     if(draw_fill_highlight)
     {
         ofxUISetColor(color_fill_highlight);
-        ofxUIDrawLine(rect->getX()+value.x*rect->getWidth(),  rect->getY(), rect->getX()+value.x*rect->getWidth(),  rect->getY()+rect->getHeight());
-        ofxUIDrawLine(rect->getX(),  rect->getY()+value.y*rect->getHeight(), rect->getX()+rect->getWidth(),  rect->getY()+value.y*rect->getHeight());
+        //ofxUIDrawLine(rect->getX()+value.x*rect->getWidth(),  rect->getY(), rect->getX()+value.x*rect->getWidth(),  rect->getY()+rect->getHeight());
+        //ofxUIDrawLine(rect->getX(),  rect->getY()+value.y*rect->getHeight(), rect->getX()+rect->getWidth(),  rect->getY()+value.y*rect->getHeight());
         
         ofxUIFill();
         ofxUISetColor(sampledColor);

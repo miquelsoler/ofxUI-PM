@@ -33,8 +33,10 @@ public:
     ofxUIScrollableCanvas(float x, float y, float w, float h);
     ofxUIScrollableCanvas(float x, float y, float w, float h, ofxUICanvas *sharedResources);
     ofxUIScrollableCanvas();
+    ofxUIScrollableCanvas(string title);
     ofxUIScrollableCanvas(ofxUICanvas *sharedResources);
     void initScrollable();
+    void initScrollable(string title);
     void setDamping(float _damping);
     void setSnapping(bool _snapping);
     void setScrollArea(float x, float y, float w, float h);
@@ -63,6 +65,8 @@ public:
     void setShowOverflow(bool showOverFlow) { bShowOverFlow = showOverFlow; }
     bool getShowOverflow() { return bShowOverFlow; }
     
+    string getTitle () { return title;} ;
+    
 #ifdef OFX_UI_TARGET_TOUCH
     void touchDown(float x, float y, int id);
     void touchMoved(float x, float y, int id);
@@ -88,5 +92,6 @@ protected:
     ofPoint vel; 
     ofPoint acc; 
     float damping;
-    float stickyDistance;     
+    float stickyDistance;
+    string title;
 };
