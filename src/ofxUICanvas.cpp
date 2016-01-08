@@ -2215,10 +2215,11 @@ void ofxUICanvas::setTheme(int theme) {
             
         case OFX_UI_THEME_HACKER:
         {
-            ofxUIColor cb = ofxUIColor( 0.294118*255.0, 0*255.0, 0.0588235*255.0, 0.196078*255.0 );
-            ofxUIColor co = ofxUIColor( 0.254902*255.0, 0.239216*255.0, 0.239216*255.0, 0.392157*255.0 );
-            ofxUIColor coh = ofxUIColor( 0.294118*255.0, 0*255.0, 0.0588235*255.0, 0.784314*255.0 );
-            ofxUIColor cf = ofxUIColor( 0.784314*255.0, 1*255.0, 0*255.0, 0.784314*255.0 );
+            ofxUIColor cb = ofxUIColor( 0.14*255.0, 0.14*255.0, 0.14*255.0, 0.75*255.0 );
+            ofxUIColor co = ofxUIColor( 0.204902*255.0, 0.209216*255.0, 0.209216*255.0, 0.392157*255.0 );
+            ofxUIColor coh = ofxUIColor( 0*255.0, 1*255.0, 1*255.0, 1*255.0 );
+            //ofxUIColor cf = ofxUIColor( 0.784314*255.0, 1*255.0, 0*255.0, 0.784314*255.0 );
+            ofxUIColor cf = ofxUIColor( 1*255.0, 1*255.0, 1*255.0, 1*255.0 );
             ofxUIColor cfh = ofxUIColor( 0.980392*255.0, 0.00784314*255.0, 0.235294*255.0, 1*255.0 );
             ofxUIColor cp = ofxUIColor( 0.0156863*255.0, 0*255.0, 0.0156863*255.0, 0.392157*255.0 );
             ofxUIColor cpo = ofxUIColor( 0.254902*255.0, 0.239216*255.0, 0.239216*255.0, 0.784314*255.0 );
