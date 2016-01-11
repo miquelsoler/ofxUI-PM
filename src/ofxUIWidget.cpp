@@ -195,7 +195,7 @@ void ofxUIWidget::setup()
 
 void ofxUIWidget::update()
 {
-
+    
 }
 
 void ofxUIWidget::draw() {

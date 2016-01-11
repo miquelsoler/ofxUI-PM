@@ -65,6 +65,7 @@ public:
     void setShowOverflow(bool showOverFlow) { bShowOverFlow = showOverFlow; }
     bool getShowOverflow() { return bShowOverFlow; }
     
+    // hack :: ELOI ADDED
     string getTitle () { return title;} ;
     
 #ifdef OFX_UI_TARGET_TOUCH
@@ -93,5 +94,7 @@ protected:
     ofPoint acc; 
     float damping;
     float stickyDistance;
+    
+    // hack :: ELOI ADDED
     string title;
 };
